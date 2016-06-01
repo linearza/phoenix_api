@@ -35,7 +35,8 @@ defmodule PhoenixApi.Mixfile do
      {:phoenix_ecto, "~> 2.0"},
      {:gettext, "~> 0.9"},
      {:ja_serializer, "~> 0.9.0"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"}],
+     {:cors_plug, "~> 1.1"}
   end
 
   # Aliases are shortcut or tasks specific to the current project.

@@ -9,3 +9,17 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias PhoenixApi.Repo  
+alias PhoenixApi.Teacher
+
+[
+  %Teacher{
+    name: "Erik",
+    age: 5
+  },
+  %Teacher{
+    name: "Bob",
+    age: 7
+  }
+] |> Enum.each(&Repo.insert!(&1))

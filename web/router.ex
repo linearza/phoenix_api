@@ -7,5 +7,6 @@ defmodule PhoenixApi.Router do
 
   scope "/api", PhoenixApi do
     pipe_through :api
+    resources "/teachers", TeacherController, except: [:new, :edit]
   end
 end
